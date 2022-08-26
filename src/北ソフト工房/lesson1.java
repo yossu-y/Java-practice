@@ -60,7 +60,6 @@ public class lesson1 {
 		int p = 11;
 		System.out.println("商=" + (p / 4) + "余り=" + (p % 5));
 		
-		
 		System.out.println("練習問題1-12");
 		int q = 7;
 		q++;

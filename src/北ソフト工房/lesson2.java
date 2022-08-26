@@ -1,7 +1,15 @@
 package 北ソフト工房;
 
+import java.io.IOException;
+
 public class lesson2 {
-	public static void main( String[] args )  {
+	public static void main( String[] args ) throws IOException {
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//
+//		String  s = br.readLine();
+//		System.out.println( s );
+		
 		
 	    String name = "Bob";
 	    System.out.println(name);
