@@ -25,6 +25,7 @@ public class lesson3 {
 		else
 			System.out.println("cはdより小さい");
 		
+		
 		System.out.println("練習問題3-4");
 		int e = 12;
 		int g = 42;
@@ -65,25 +66,25 @@ public class lesson3 {
 		System.out.println("練習問題3-7");
 		int j = 80;
 		
-		if (j > 60) {
+		if (j >= 60) {
 			System.out.println("合格");
 		} else {
 			System.out.println("不合格");
 		}
 		
-		if (j > 80) {
+		if (j >= 80) {
 			System.out.println("たいへんよくできました");
-		} else if (j > 70) {
+		} else if (j >= 60) {
 			System.out.println("よくできました");
 		} else {
 			System.out.println("残念でした");
 		}
 		
-		if (j > 80) {
+		if (j >= 80) {
 			System.out.println("優");
-		} else if (j > 70) {
+		} else if (j >= 70) {
 			System.out.println("良");
-		} else if (j > 60) {
+		} else if (j >= 60) {
 			System.out.println("可");
 		} else {
 			System.out.println("不可");
@@ -116,9 +117,9 @@ public class lesson3 {
 			System.out.println( "xとyは等しく、かつ、負の数である。" );
 		} else if ((m < n) || (m % 2 == 0)) {
 			System.out.println( "xはyより小さい、または、xは偶数である。" );
-		} else if ((m < 10 || m >= 100) && (n < 10 || n >= 100)) {
+		} else if ((m <= 10 || m >= 100) && (n <= 10 || n >= 100)) {
 			System.out.println( "xは10以下または100以上で、かつ、yは10以上かつ100以下である。" );
-		} else if ((m < 0 && n < 0) || (m > 0 && n > 0)) {
+		} else if (!(m < 0 && n < 0)) {
 			System.out.println( "xもyも負の数である、ではない。" );
 		}		
 		
@@ -162,6 +163,7 @@ public class lesson3 {
 		}		
 		
 		System.out.println("練習問題3-12");
+		
 		
 	}
 }
