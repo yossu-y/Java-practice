@@ -162,16 +162,48 @@ public class lesson4 {
 		System.out.println("練習問題4-18");
 		System.out.println("練習問題4-19");
 		System.out.println("練習問題4-20");
-		int size = s.nextInt();
-		for (int i = 0; i < size; i++) {
-			for (int j = 0; j <= i; j++) {
-				System.out.print("$");
-			}
-			System.out.println();
-		}
+//		int size = s.nextInt();
+//		for (int i = 0; i < size; i++) {
+//			for (int j = 0; j <= i; j++) {
+//				System.out.print("$");
+//			}
+//			System.out.println();
+//		}
 		
 		System.out.println("練習問題4-21");
+		int lambda = s.nextInt();
+		for( int i = 0 ; i < lambda ; i++ ) {
+		    for( int j = 0 ; j < lambda ; j++ ) {
+		        if( i == j || ( lambda - i - 1 ) == j ) {
+		        	System.out.print( "X" );
+		        } else {
+		        	System.out.print( " " );
+		        }  
+		    }
+		    System.out.println( "" );
+		}
+		
+//		for (int y = 0; y < lambda; y++) {
+//			for (int z = 0; z < lambda; z++) {
+//				if (y == z || (lambda - y - 1) == z) {
+//					System.out.print("X");
+//				} else {
+//					System.out.print("");
+//				}
+//			}
+//			System.out.println("");
+//		}
+		
 		System.out.println("練習問題4-22");
+		int n1 = 0;
+		int n2 = 1;
+		int n3 = n1 + n2;
+		while (n1 <= 1000) {
+			System.out.print(n1 + ",");
+			n1 = n2;
+			n2 = n3;
+			n3 = n1 + n2;
+		}
 		
 		
 	}
