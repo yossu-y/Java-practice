@@ -8,6 +8,12 @@ public class lesson4 {
 			System.out.println(i + "." + word);
 		}
 		
+//		int a = 1;
+//		while (a <= 10) {
+//			System.out.println("SPAM");
+//			a++;
+//		}
+		
 		System.out.println("練習問題4-2");
 		for (int i = 1; i <= 9; i++) {
 			System.out.println(3 * i);
