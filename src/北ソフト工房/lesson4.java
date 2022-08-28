@@ -57,6 +57,9 @@ public class lesson4 {
 		System.out.println("勝ち" + wins + "回、負け" + ( 10 - wins ) + "回");
 		
 		System.out.println("練習問題4-7");
+		
+		
+		
 		System.out.println("練習問題4-8");
 		System.out.println("練習問題4-9");
 		System.out.println("練習問題4-10");
