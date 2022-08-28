@@ -1,13 +1,15 @@
 package 北ソフト工房;
+import java.util.Scanner;
 
 public class lesson4 {
 	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
 		System.out.println("練習問題4-1");
 		String word = "SPAM";
 		for (int i = 1; i <= 10; i++) {
 			System.out.println(i + "." + word);
 		}
-		
 //		int a = 1;
 //		while (a <= 10) {
 //			System.out.println("SPAM");
@@ -34,7 +36,26 @@ public class lesson4 {
 		}
 		
 		System.out.println("練習問題4-5");
-		System.out.println("練習問題4-6");
+//		int numbers = s.nextInt();
+//		int sum = 0;
+//		
+//		for (int i = 0; i < 10; i++ ) {
+//			int num = s.nextInt();
+//			sum += num;
+//		}
+//		System.out.println(sum / 10);
+//		
+//		System.out.println("練習問題4-6");
+		int wins = 0;
+		
+		for (int i = 0; i < 10; i++) {
+			int result = s.nextInt();
+			if (result == 1) {
+				wins += 1;
+			}
+		}
+		System.out.println("勝ち" + wins + "回、負け" + ( 10 - wins ) + "回");
+		
 		System.out.println("練習問題4-7");
 		System.out.println("練習問題4-8");
 		System.out.println("練習問題4-9");
