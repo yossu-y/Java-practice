@@ -11,7 +11,7 @@ public class lesson3 {
 		int a = 10;
 		int b = 5;
 		if (a > b) {
-			System.out.println("xはyより大きい。");
+			System.out.println("aはbより大きい。");
 		}
 		
 		System.out.println("練習問題3-2");
@@ -115,7 +115,29 @@ public class lesson3 {
 		
 		
 		System.out.println("練習問題3-9");
-		
+		System.out.println( "曜日を選択してください" );
+		System.out.print( "0=日曜、1=月曜、2=火曜、3=水曜、4=木曜、5=金曜、6=土曜" );
+		int day = s.nextInt();
+
+		System.out.println( "時間帯を選択してください" );
+		System.out.print( "0=午前、1=午後、2=夜間" );
+		int zone = s.nextInt();
+
+		boolean bopen = true;
+
+		if( day == 0 )
+		    bopen = false;
+		else if( zone == 0 && ( day == 2 || day == 5 ) )
+		    bopen = false;
+		else if( zone == 1 && day == 6 )
+		    bopen = false;
+		else if( zone == 2 && ( day == 3 || day == 6 ) )
+		    bopen = false;
+
+		if( bopen )
+		    System.out.println( "診療しています。" );
+		else
+		    System.out.println( "休診です。" );
 		
 		
 		System.out.println("練習問題3-10");
@@ -191,7 +213,6 @@ public class lesson3 {
 			System.out.println("入力が間違っています");
 			break;
 		}
-		
 		
 		s.close();
 		
