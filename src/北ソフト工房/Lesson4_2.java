@@ -168,10 +168,6 @@ public class Lesson4_2 {
 			z = x + y;
 		}
 		
-		
-		
-		
-		
 	}
 
 }
