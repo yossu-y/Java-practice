@@ -168,6 +168,27 @@ public class Lesson4_2 {
 			z = x + y;
 		}
 		
+		for (int i = 1; i <= 50; i++) {
+			if (i % 3 == 0 && i % 5 == 0) {
+				System.out.println("FizzBuzz");
+			} else if (i % 3 == 0) {
+				System.out.println("Fizz");
+			} else if (i % 5 == 0) {
+				System.out.println("Buzz");
+			} else {
+				System.out.println(i);
+				
+			}
+		}
+		
+		for (int a = 1; a <= 9; a++) {
+			for (int b = 1; b <= 9; b++) {
+				if (a != b) {
+					System.out.println(a + "×" + b + "=" + a * b);
+				}
+			}
+		}
+		
 	}
 
 }
