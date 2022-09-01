@@ -17,6 +17,27 @@ public class Lesson6 {
 		
 		System.out.println(Value(c, Value(d, e)));
 		
+		System.out.println("練習問題4");
+		Triangle(3);
+		System.out.println();
+		Triangle(4);
+		System.out.println();
+		Triangle(5);
+
+		System.out.println("練習問題5");
+		DrawTriangle2(3, "%");
+		System.out.println();
+		DrawTriangle2(4, "#");
+		System.out.println();
+		DrawTriangle2(5, "@");
+		
+		System.out.println("練習問題6");
+		for (int i = 1; i <= 9; i++) {
+			Kuku(i);
+		}
+		
+		System.out.println("練習問題");
+		System.out.println("練習問題");
 		System.out.println("練習問題");
 		System.out.println("練習問題");
 	}
@@ -39,5 +60,32 @@ public class Lesson6 {
 			return n2;
 		}
 	}
+//	4
+	public static void Triangle(int size) {
+		for (int i = 0; i < size; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print("$");
+			}
+			System.out.println();
+		}
+	}
+//	5
+	public static void DrawTriangle2(int size, String ch) {
+		for (int i = 0; i < size; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print(ch);
+			}
+			System.out.println();
+		}
+	}
+	
+	static void Kuku(int num) {
+		for (int i = 1; i <= 9; i++) {
+			System.out.printf(" %2d", num * i);
+		}
+		System.out.println();
+	}
+	
+	
 
 }
