@@ -36,10 +36,18 @@ public class Lesson6 {
 			Kuku(i);
 		}
 		
-		System.out.println("練習問題");
-		System.out.println("練習問題");
-		System.out.println("練習問題");
-		System.out.println("練習問題");
+		System.out.println("練習問題7");
+		for (int n = 10000; n < 10100; n++) {
+			if (Number(n)) {
+				System.out.println(n + " ");
+			}
+		}
+		
+		System.out.println("練習問題8");
+		for (int n = 11; n <= 20; n++) {
+			System.out.print(Fibonacci(n) + " ");
+		}
+		
 	}
 	
 //	1
@@ -78,13 +86,37 @@ public class Lesson6 {
 			System.out.println();
 		}
 	}
-	
+//	6
 	static void Kuku(int num) {
 		for (int i = 1; i <= 9; i++) {
 			System.out.printf(" %2d", num * i);
 		}
 		System.out.println();
 	}
+//	7
+	public static boolean Number(int num) {
+		if (num <= 3) {
+			return true;
+		}
+		for (int i = 2; i <= (num / 2); i++) {
+			if (num % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public static int Fibonacci(int n) {
+		if (n == 0) {
+			return 0;
+		} else if (n ==1) {
+			return 1;
+		} else {
+			return Fibonacci(n - 2) + Fibonacci(n - 1);
+		}
+	}
+	
+	
 	
 	
 
