@@ -107,6 +107,37 @@ public class Basic_Day4 {
 		}
 		System.out.println("最大値：" + max_value);
 		
+		System.out.println("####################");
+		
+		int guusuu = 0;
+		int kisuu = 0;
+		
+		for (int n = 1; n <= 10; n++) {
+			int o = (int)(Math.random() * 10) + 1;
+			System.out.print(o + " ");
+			if (o % 2 == 0) {
+				guusuu += 1;
+			} else {
+				kisuu += 1;
+			}
+		}
+		System.out.println();
+		for (int p = 0; p < guusuu; p++ ) {
+			System.out.print("★ ");
+		}
+		System.out.println();
+		for (int q = 0 ;q < kisuu; q++ ) {
+			System.out.print("☆ ");
+		}
+		System.out.println();
+		
+		for (int x = 1; x <= 9; x++) {
+			for (int y = 1; y <= 9; y++) {
+				System.out.printf(y + "*" + x + "=" + (y * x) + " ", " %2d");
+			}
+			System.out.println();
+		}
+		
 		
 	}
 	
