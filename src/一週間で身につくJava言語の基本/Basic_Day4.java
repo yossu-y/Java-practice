@@ -121,19 +121,28 @@ public class Basic_Day4 {
 				kisuu += 1;
 			}
 		}
-		System.out.println();
-		for (int p = 0; p < guusuu; p++ ) {
-			System.out.print("★ ");
-		}
-		System.out.println();
-		for (int q = 0 ;q < kisuu; q++ ) {
-			System.out.print("☆ ");
-		}
+//		System.out.println();
+//		for (int p = 0; p < guusuu; p++ ) {
+//			System.out.print("★ ");
+//		}
+//		System.out.println();
+//		for (int q = 0 ;q < kisuu; q++ ) {
+//			System.out.print("☆ ");
+//		}
+//		System.out.println();
+//		
+//		for (int x = 1; x <= 9; x++) {
+//			for (int y = 1; y <= 9; y++) {
+//				System.out.printf(y + "*" + x + "=" + (y * x) + " ", " %2d");
+//			}
+//			System.out.println();
+//		}
 		System.out.println();
 		
-		for (int x = 1; x <= 9; x++) {
-			for (int y = 1; y <= 9; y++) {
-				System.out.printf(y + "*" + x + "=" + (y * x) + " ", " %2d");
+		for (int v = 0; v <= 10; v++) {
+			System.out.print("□ ");
+			for (int w = 1; w <= v; w++) {
+				System.out.print("■ ");
 			}
 			System.out.println();
 		}
