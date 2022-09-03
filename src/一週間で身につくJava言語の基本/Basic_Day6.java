@@ -7,7 +7,7 @@ public class Basic_Day6 {
 		s.s = "Hello";
 		
 		int ans = s.add(1, 2);
-		String str = s.add("World");
+		String str = s.add(" World");
 		System.out.println(ans);
 		System.out.println(str);
 		s.showNum();
