@@ -12,5 +12,12 @@ public class Lesson1 {
 		
 		System.out.println(a);
 		System.out.println(b);
+		
+		int[] rgb = {100, 200, 250};
+		String[] color = {"赤色", "黄色", "青色"};
+		
+		for (int i = 0; i < rgb.length; i++) {
+			System.out.println(color[i] + "." + rgb[i]);
+		}
 	}
 }

@@ -10,14 +10,14 @@ public class day8 {
 			System.out.println(val);
 		}
 		
-		Sample[] samples = new Sample[3];
-		sample[0] = new Sample();
-		sample[1] = new Sample();
-		sample[2] = new Sample();
-		
-		for (Sample sample: samples) {
-			sample.hello();
-		}
+//		Sample[] samples = new Sample[3];
+//		sample[0] = new Sample();
+//		sample[1] = new Sample();
+//		sample[2] = new Sample();
+//		
+//		for (Sample sample: samples) {
+//			sample.hello();
+//		}
 	}
 
 }
